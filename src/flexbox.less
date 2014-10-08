@@ -221,18 +221,12 @@
  * flex: none | <flex-grow> <flex-shrink>? | <flex-grow> <flex-shrink> <flex-basis>?
  * default - none
  */
-.flex(@grow: 0, @shrink: 1, @basis: auto) {}
-
-.flex(@grow: 0, @shrink: 1, @basis: auto) when not (@grow = 0) {
-  .flex-grow(@grow);
-}
-
-.flex(@grow: 0, @shrink: 1, @basis: auto) when not (@shrink = 1) {
-  .flex-shrink(@shrink);
-}
-
-.flex(@grow: 0, @shrink: 1, @basis: auto) when not (@basis = auto) {
-  .flex-basis(@basis);
+.flex(@flex) {
+  -webkit-box-flex: @flex;
+  -webkit-flex: @flex;
+  -moz-flex: @flex;
+  -ms-flex: @flex;
+  flex: @flex;
 }
 
 /**
