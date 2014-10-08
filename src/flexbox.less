@@ -244,8 +244,11 @@
 }
 
 .align-self(@direction: auto) when (@direction = auto), (@direction = center), (@direction = baseline), (@direction = stretch) {
+  -ms-flex-item-align: @direction;
+}
+
+.align-self(@direction: auto) {
   -webkit-align-self: @direction;
   -moz-align-self: @direction;
-  -ms-flex-item-align: @direction;
   align-self: @direction;
 }
