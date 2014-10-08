@@ -1,1 +1,4 @@
-.sass-cache
+*.iml
+*~
+.DS_Store
+.idea

@@ -1,0 +1,15 @@
+{
+    "name": "praxis-flexbox",
+    "version": "1.0.0",
+    "main": "src/flexbox.less",
+    "keywords": [
+        "flexbox",
+        "css",
+        "less",
+        "praxis"
+    ],
+    "ignore": [
+        "**/.*",
+        "README.md"
+    ]
+}
